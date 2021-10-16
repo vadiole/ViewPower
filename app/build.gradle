@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        setProperty("archivesBaseName", "ViewPower" + "_v" + versionName + "(" + versionCode + ")")
+        setProperty("archivesBaseName", "ViewPower" + "-v" + versionName)
     }
 
     buildTypes {
@@ -33,6 +33,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    lintOptions {
+        disable "Instantiatable"
     }
 }
 
